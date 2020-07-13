@@ -1,0 +1,12 @@
+-- Counting evens of a given list
+
+algo x
+ | even x = 1
+ | otherwise = 0
+
+contarPares:: [Int] -> Int
+contarPares [] = 0
+contarPares (x:xs) = (algo x ) + contarPares xs
+
+
+main = print (contarPares [1, 2, 3, 4]) -- 2

@@ -1,0 +1,9 @@
+-- Hailstone --
+
+hailstone :: Int -> Int
+
+--pattern matching: simila to switch, In POO we'd use polymorphism
+hailstone n
+  | even n = n `div` 2
+  | otherwise = 3 * n + 1 --similar to default
+main = print (hailstone 10)

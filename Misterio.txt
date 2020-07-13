@@ -1,0 +1,6 @@
+misterio :: [Int] -> Int
+misterio [] = 0
+misterio (x:xs) = 1 + misterio xs
+ 
+contarPares :: [Int] -> Int
+main = print (contarPares [1, 2, 3, 4]) -- 2

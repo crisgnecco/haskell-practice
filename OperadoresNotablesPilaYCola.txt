@@ -1,0 +1,23 @@
+-- Queue
+queue :: [Int] -> Int -> [Int]
+
+-- [] convierte x en una lista para poder pegarla con ++
+queue xs x = xs ++ [x]
+ 
+dequeue :: [Int] -> Int
+dequeue [] = 0
+dequeue (x:xs) = x
+
+-- Stack
+push :: [Int] -> Int -> [Int]
+push xs x = x:xs
+ 
+pop :: [Int] -> Int
+pop = dequeue
+ 
+lst = [1, 2, 3]
+ 
+-- main = print(queue lst 100)
+-- main = print(dequeue lst)
+-- main = print(push lst 100)
+main = print(pop lst)

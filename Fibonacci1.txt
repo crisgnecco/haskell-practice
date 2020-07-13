@@ -1,0 +1,9 @@
+-- Fibonacci --
+
+fi :: Int -> Int
+
+fi 1 = 1
+fi 2 = 1
+fi n = fi(n-1) + fi(n-2)
+
+main = print(fi 8)

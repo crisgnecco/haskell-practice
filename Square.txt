@@ -1,0 +1,7 @@
+--I could define the argument and return types.(opcional)
+square :: Int-> Int
+
+square(x) = x * x
+
+--sacar por pantalla
+main = print (square 42)
